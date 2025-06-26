@@ -138,7 +138,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Nusrin Dyni | Made with ❤️</p>
+    <p>&copy; 2025 Nusrin Dyni | Made with GitHub</p>
   </footer>
 </body>
 </html>
