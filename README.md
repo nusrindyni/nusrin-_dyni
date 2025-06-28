@@ -106,7 +106,7 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Business Website for a Salon</h3>
+      <h3>Business Website for a Restaurant</h3>
       <p>A responsive WordPress site with booking form and gallery. <strong>Tech:</strong> WordPress, Elementor</p>
     </div>
     <div class="project">
