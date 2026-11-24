@@ -1,277 +1,1554 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nusrin Dyni - Digital Marketing Specialist. Social media marketing, SEO, content strategy and digital growth.">
-  <meta name="author" content="Nusrin Dyni">
-  <title>Nusrin Dyni | Digital Marketing Specialist</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; }
-    .heading { font-family: 'Playfair Display', serif; }
-    .gradient-text {
-      background: linear-gradient(90deg,#a78bfa,#60a5fa);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-    .glass {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.12);
-      backdrop-filter: blur(12px);
-    }
-    .project-card { transition: .3s ease; }
-    .project-card:hover { transform: translateY(-6px); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusrin Dyni | Digital Marketing Specialist & Technical SEO Technologist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- jsPDF & html2canvas for client-side PDF CV generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        accent: {
+                            gold: '#D97706',
+                            goldHover: '#B45309',
+                            emerald: '#059669',
+                            navy: '#0F172A',
+                            slateCard: '#1E293B',
+                        }
+                    }
+                }
+            }
+        }
+         </script>
+    <style>
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 75% 20%, rgba(217, 119, 6, 0.15) 0%, transparent 45%),
+                        radial-gradient(circle at 15% 75%, rgba(13, 148, 136, 0.15) 0%, transparent 45%),
+                        #0F172A;
+        }
+        .accent-gradient-text {
+            background: linear-gradient(135deg, #F59E0B 0%, #10B981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d97706;
+        }
+    </style>
 </head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
+ <!-- Navigation Bar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-emerald-500 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    ND
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Nusrin Dyni</span>
+                    <span class="text-xs text-amber-400 font-medium">Digital Marketing & Technical SEO</span>
+                </div>
+            </a>
 
-<body class="bg-[#0b1020] text-white">
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-7 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-amber-400 transition-colors">About</a>
+                <a href="#experience" class="text-slate-300 hover:text-amber-400 transition-colors">Experience</a>
+                <a href="#services" class="text-slate-300 hover:text-amber-400 transition-colors">Services</a>
+                <a href="#projects" class="text-slate-300 hover:text-amber-400 transition-colors">Projects & Case Studies</a>
+                <a href="#skills" class="text-slate-300 hover:text-amber-400 transition-colors">Skills & Credentials</a>
+                <button onclick="downloadPDFCV()" class="px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/20 text-xs font-semibold transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                </button>
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-semibold shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 transition-all hover:-translate-y-0.5">
+                    Partner With Me
+                </a>
+            </nav>
 
-  <!-- Navigation -->
-  <nav class="fixed top-0 w-full z-50 bg-[#0b1020]/90 backdrop-blur-lg border-b border-white/10">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#home" class="text-xl font-bold tracking-wide">NUSRIN<span class="text-violet-400">.</span></a>
-      <div class="hidden md:flex gap-7 text-sm text-gray-300">
-        <a href="#about" class="hover:text-violet-400">About</a>
-        <a href="#skills" class="hover:text-violet-400">Skills</a>
-        <a href="#experience" class="hover:text-violet-400">Experience</a>
-        <a href="#projects" class="hover:text-violet-400">Projects</a>
-        <a href="#contact" class="hover:text-violet-400">Contact</a>
-      </div>
-      <a href="#contact" class="bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-full text-sm">Let's Connect</a>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section id="home" class="min-h-screen flex items-center pt-24 px-6">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
-      <div>
-        <p class="text-violet-400 font-semibold tracking-widest uppercase text-sm mb-5">
-          Hello, I'm Nusrin Dyni
-        </p>
-        <h1 class="heading text-5xl md:text-7xl leading-tight mb-6">
-          Turning Ideas Into <span class="gradient-text">Digital Growth.</span>
-        </h1>
-        <p class="text-gray-400 text-lg leading-relaxed mb-8">
-          Digital Marketing Specialist passionate about social media strategy,
-          creative content, SEO and building meaningful connections between
-          brands and their audiences.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#projects" class="bg-violet-600 hover:bg-violet-700 px-7 py-3 rounded-full font-semibold">
-            Explore My Work
-          </a>
-          <a href="mailto:nusrindyni3@gmail.com" class="border border-white/30 hover:border-violet-400 px-7 py-3 rounded-full">
-            Contact Me
-          </a>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
         </div>
-        <div class="flex gap-6 mt-10 text-sm text-gray-400">
-          <a href="https://linkedin.com/in/nusrin-dyni" target="_blank" rel="noopener noreferrer" class="hover:text-violet-400">LinkedIn ↗</a>
-          <a href="https://github.com/nusrindyni" target="_blank" rel="noopener noreferrer" class="hover:text-violet-400">GitHub ↗</a>
-        </div>
-      </div>
 
-      <div class="relative">
-        <div class="absolute inset-0 bg-violet-600/20 blur-3xl rounded-full"></div>
-        <div class="glass rounded-3xl p-10 relative text-center">
-          <div class="w-32 h-32 rounded-full bg-gradient-to-br from-violet-500 to-blue-500 mx-auto flex items-center justify-center text-5xl font-bold mb-6">
-            ND
-          </div>
-          <h2 class="heading text-3xl mb-2">Nusrin Dyni</h2>
-          <p class="text-violet-300">Digital Marketing Specialist</p>
-          <p class="text-gray-400 text-sm mt-5">Marketing • Creativity • Technology</p>
-          <div class="grid grid-cols-2 gap-3 mt-8 text-sm">
-            <div class="bg-white/5 rounded-xl p-4">
-              <p class="text-violet-300 font-bold">Marketing</p>
-              <p class="text-gray-400 mt-1">Strategy & Content</p>
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-4 pb-6 space-y-3 bg-slate-900/95 border-b border-slate-800">
+            <a href="#about" class="block text-slate-300 hover:text-amber-400 py-2 text-base font-medium">About</a>
+            <a href="#experience" class="block text-slate-300 hover:text-amber-400 py-2 text-base font-medium">Experience</a>
+            <a href="#services" class="block text-slate-300 hover:text-amber-400 py-2 text-base font-medium">Services</a>
+            <a href="#projects" class="block text-slate-300 hover:text-amber-400 py-2 text-base font-medium">Projects & Case Studies</a>
+            <a href="#skills" class="block text-slate-300 hover:text-amber-400 py-2 text-base font-medium">Skills & Certifications</a>
+            <button onclick="downloadPDFCV()" class="w-full text-left px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/20 text-sm font-semibold transition-all flex items-center justify-between">
+                <span>Download CV (PDF)</span>
+                <i class="fa-solid fa-file-arrow-down"></i>
+            </button>
+            <a href="#contact" class="block text-center w-full mt-2 px-5 py-3 rounded-lg bg-amber-500 text-slate-950 font-bold">
+                Partner With Me
+            </a>
+        </div>
+    </header>
+     <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Copy & CTAs -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm text-amber-400 font-medium">
+                        <span class="flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Jeddah, Saudi Arabia
+                        </span>
+                        <span class="text-slate-600">•</span>
+                        <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-passport text-xs mr-1"></i>Transferable Iqama</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Nusrin Dyni <br class="hidden sm:inline">
+                        <span class="accent-gradient-text text-2xl sm:text-4xl lg:text-5xl block mt-1">Digital Marketing & Technical SEO Technologist</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+                        Data-driven Digital Marketing Specialist with <strong>3+ years of experience</strong> scaling organic search visibility, managing high-ROI paid media campaigns (Google Ads, Meta, YouTube), and executing technical SEO. Combines a <strong>Computer Science & Full-Stack Web Development background</strong> (Python, Django, HTML/CSS/JS) with advanced analytics (GA4, GTM, GSC) to drive measurable revenue growth.
+                    </p>
+
+                    <!-- Direct Contact Quick Badges -->
+                    <div class="pt-1 flex flex-wrap justify-center lg:justify-start gap-3 text-xs sm:text-sm text-slate-300">
+                        <a href="mailto:nusrindyni3@gmail.com" class="px-3 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-800 border border-slate-700 flex items-center gap-2 hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-envelope text-amber-400"></i> nusrindyni3@gmail.com
+                        </a>
+                        <a href="tel:+966548706043" class="px-3 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-800 border border-slate-700 flex items-center gap-2 hover:text-emerald-400 transition-colors">
+                            <i class="fa-solid fa-phone text-emerald-400"></i> +966 548706043
+                        </a>
+                        <a href="https://linkedin.com/in/nusrin-dyni" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-800 border border-slate-700 flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-linkedin text-blue-400"></i> linkedin.com/in/nusrin-dyni
+                        </a>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="downloadPDFCV()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-slate-950 font-bold text-base shadow-xl shadow-emerald-500/20 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-arrow-down text-lg"></i>
+                            <span>Download PDF CV</span>
+                        </button>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-base shadow-xl shadow-amber-500/20 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <span>Partner With Me</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <button onclick="openCVPreviewModal()" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm transition-all hover:border-slate-500 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-eye text-amber-400"></i>
+                            <span>View Full Interactive CV</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Verification & Experience Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative max-w-md mx-auto">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-amber-500 to-emerald-500 opacity-20 blur-xl"></div>
+                        
+                        <!-- Profile Highlight Card -->
+                        <div class="relative bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 shadow-2xl space-y-5">
+                            <div class="flex items-center justify-between pb-4 border-b border-slate-700/60">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-500 to-emerald-400 flex items-center justify-center text-slate-950 font-extrabold text-lg">
+                                        ND
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white font-bold text-base leading-tight">Nusrin Dyni</h3>
+                                        <p class="text-xs text-amber-400 font-medium">B.Tech CSE | MarTech & Performance</p>
+                                    </div>
+                                </div>
+                                <span class="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
+                                    Iqama Valid
+                                </span>
+                            </div>
+                            <!-- Fast Specs -->
+                            <div class="space-y-3">
+                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+                                    <span class="text-slate-400 font-medium">Location & Status:</span>
+                                    <span class="text-white font-semibold">Jeddah, KSA (Transferable Iqama)</span>
+                                </div>
+
+                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+                                    <span class="text-slate-400 font-medium">Core Stack:</span>
+                                    <span class="text-amber-400 font-semibold">SEO, GA4, GTM, Google/Meta Ads</span>
+                                </div>
+
+                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+                                    <span class="text-slate-400 font-medium">Technical Dev:</span>
+                                    <span class="text-emerald-400 font-semibold">Python (Django), JS, HTML5, SQL</span>
+                                </div>
+
+                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+                                    <span class="text-slate-400 font-medium">Degree:</span>
+                                    <span class="text-teal-300 font-semibold">B.Tech Computer Science & Eng.</span>
+                                </div>
+                            </div>
+
+                            <!-- Direct CV Action -->
+                            <div class="pt-2">
+                                <button onclick="downloadPDFCV()" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-950 border border-emerald-500/40 text-emerald-400 font-bold text-xs transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-download"></i>
+                                    <span>Download Official PDF CV (DigitalMarketing_NusrinDyni_Cv.pdf)</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="bg-white/5 rounded-xl p-4">
-              <p class="text-violet-300 font-bold">Technology</p>
-              <p class="text-gray-400 mt-1">Computer Engineering</p>
+        </div>
+    </section>
+    <!-- Metrics Banner -->
+    <section class="border-y border-slate-800 bg-slate-950/60 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <div class="text-3xl font-extrabold text-amber-400 mb-1">3+ Years</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Digital Marketing & SEO Expertise</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">+23.3% to 3.5x</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Organic Visibility & Traffic Lift</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <div class="text-3xl font-extrabold text-teal-400 mb-1">B.Tech CSE</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Full-Stack Web Dev Background</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80">
+                    <div class="text-3xl font-extrabold text-amber-500 mb-1">Jeddah, KSA</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Transferable Iqama Ready</div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Professional Summary & Bio -->
+    <section id="about" class="py-20 md:py-28 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Narrative Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">
+                            <i class="fa-solid fa-user-check"></i> Executive Profile Summary
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Full-Funnel Technologist & Digital Marketer</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Nusrin Dyni bridges marketing, analytics, and software engineering. Armed with a Computer Science degree and hands-on Python/Django full-stack experience, she builds bulletproof conversion tracking systems and SEO-optimized acquisition channels.
+                        </p>
+                        
+                        <div class="space-y-3 pt-2 text-xs">
+                            <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800">
+                                <span class="text-slate-400">Resident Visa:</span>
+                                <span class="text-emerald-400 font-semibold">Valid Transferable Iqama (Saudi Arabia)</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800">
+                                <span class="text-slate-400">Education:</span>
+                                <span class="text-white font-medium">B.Tech CSE (APJ Abdul Kalam Tech Univ)</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800">
+                                <span class="text-slate-400">Primary Email:</span>
+                                <span class="text-amber-400 font-medium">nusrindyni3@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <button onclick="downloadPDFCV()" class="w-full py-3 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-download"></i> Download Official CV PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Core Strengths -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block text-amber-400 text-sm font-bold uppercase tracking-wider">
+                        Core Value Proposition
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Combining Engineering Logic with Data-Driven Acquisition
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Many digital marketers operate solely at the campaign level, missing key technical issues on websites or inaccurate event tracking. Nusrin Dyni diagnoses page speed bottlenecks, custom schema markup, server-side data logs, and GTM script conflicts directly in the code.
+                    </p>
+
+                    <!-- Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+                            <div class="text-amber-400 font-bold text-base flex items-center gap-2">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i> Technical & On-Page SEO
+                            </div>
+                            <p class="text-xs text-slate-300">Executing exhaustive site audits, Core Web Vitals optimizations, keyword gap analyses, and high-DA backlink strategies.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+                            <div class="text-emerald-400 font-bold text-base flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye"></i> Paid Media & ROAS Scaling
+                            </div>
+                            <p class="text-xs text-slate-300">Managing Google Ads (Search, YouTube, PMax) & Meta Ads with AI-powered audience targeting to minimize CPA.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+                            <div class="text-teal-400 font-bold text-base flex items-center gap-2">
+                                <i class="fa-solid fa-chart-diagram"></i> Precise GA4 & GTM Telemetry
+                            </div>
+                            <p class="text-xs text-slate-300">Building custom triggers, data layers, and conversion funnels to ensure 100% reliable campaign attribution.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+                            <div class="text-blue-400 font-bold text-base flex items-center gap-2">
+                                <i class="fa-solid fa-code font-mono"></i> Web & CRM Engineering
+                            </div>
+                            <p class="text-xs text-slate-300">Developing responsive web applications and custom Python/Django CRM solutions to manage customer consultation logs.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Timeline Section -->
+    <section id="experience" class="py-20 md:py-28 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-400 text-sm font-bold uppercase tracking-wider">Career Journey</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Professional Experience</h2>
+                <p class="text-slate-400 text-sm">3+ years of track record across digital marketing agencies, software development teams, and independent consulting.</p>
+            </div>
+
+            <!-- Timeline Stack -->
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:-ml-px before:w-0.5 before:bg-slate-800">
+                
+                <!-- Experience 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-briefcase text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-amber-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Digital Marketing Specialist (Consultant)</h3>
+                                <span class="text-xs text-amber-400 font-semibold">Freelance</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">2023 – Present</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Executed comprehensive on-page, off-page, and technical SEO audits, keyword gap analyses, and authoritative backlink acquisition to scale client search rankings.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Configured custom event tags, triggers, and goal funnels via GTM and GA4 to eliminate attribution loss.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Engineered a full-stack custom CRM web application using Python (Django), jQuery, and SQLite to centralize lead capture and consultation tracking.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+<!-- Experience 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-chart-line text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-emerald-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Digital Marketing Executive</h3>
+                                <span class="text-xs text-emerald-400 font-semibold">Varada Biz</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">2022 – 2023</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Boosted overall brand visibility by <strong>25%</strong> across search and social channels by designing and executing multi-channel campaigns.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Elevated organic SERP rankings and domain authority through high-intent keyword research and meta structure optimization.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Maximized campaign efficiency and minimized ad spend waste through active user behavior analysis in GA and GSC.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-code text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-teal-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Python Django Developer (Intern)</h3>
+                                <span class="text-xs text-teal-400 font-semibold">Inmakes Info Technology</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">2023</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Strengthened technical web infrastructure and backend scalability by developing structured database models and server logic in Python/Django.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Enhanced cross-device responsiveness and UX within an Agile Software Development Life Cycle (SDLC) framework.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-bullhorn text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-amber-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Junior Digital Marketing Executive</h3>
+                                <span class="text-xs text-amber-400 font-semibold">Soften Technologies</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">Aug 2020 – Jan 2021</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Enhanced brand recognition by <strong>30%</strong> across Google, Facebook, Instagram, and Twitter paid & organic campaigns.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Grew organic website traffic by <strong>23.3%</strong> within six months via technical SEO fixes, image compression, and content optimization.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Deployed GTM tracking containers and configured GA reporting dashboards.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+<!-- Experience 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-chart-line text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-emerald-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Digital Marketing Executive</h3>
+                                <span class="text-xs text-emerald-400 font-semibold">Varada Biz</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">2022 – 2023</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Boosted overall brand visibility by <strong>25%</strong> across search and social channels by designing and executing multi-channel campaigns.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Elevated organic SERP rankings and domain authority through high-intent keyword research and meta structure optimization.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Maximized campaign efficiency and minimized ad spend waste through active user behavior analysis in GA and GSC.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-code text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-teal-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Python Django Developer (Intern)</h3>
+                                <span class="text-xs text-teal-400 font-semibold">Inmakes Info Technology</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">2023</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Strengthened technical web infrastructure and backend scalability by developing structured database models and server logic in Python/Django.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Enhanced cross-device responsiveness and UX within an Agile Software Development Life Cycle (SDLC) framework.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-bullhorn text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 hover:border-amber-500/50 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Junior Digital Marketing Executive</h3>
+                                <span class="text-xs text-amber-400 font-semibold">Soften Technologies</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">Aug 2020 – Jan 2021</span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Enhanced brand recognition by <strong>30%</strong> across Google, Facebook, Instagram, and Twitter paid & organic campaigns.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Grew organic website traffic by <strong>23.3%</strong> within six months via technical SEO fixes, image compression, and content optimization.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5 shrink-0"></i>
+                                <span>Deployed GTM tracking containers and configured GA reporting dashboards.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+<!-- Experience 5 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-slate-700 text-slate-200 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-laptop-code text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl transition-all space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Web Developer (Intern)</h3>
+                                <span class="text-xs text-slate-400 font-semibold">Laxmi InfoTech</span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold">2017</span>
+                        </div>
+                        <p class="text-xs text-slate-300">
+                            Built responsive HTML/CSS web components focused on usability, clean user navigation flow, and cross-browser functionality.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Offered -->
+    <section id="services" class="py-20 md:py-28 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-400 text-sm font-bold uppercase tracking-wider">Services</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Specialized Digital Growth Solutions</h2>
+                <p class="text-slate-400 text-sm">Aligning organic reach, paid advertising precision, and code-level technical web optimizations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-950 border border-slate-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Technical & On-Page SEO</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Deep-dive site audits, Core Web Vitals optimization, schema markup integration, and keyword gap strategies to claim top SERP positions.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact" onclick="setServiceInquiry('Technical & On-Page SEO')" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                            Inquire for SEO Audit <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-950 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Paid Search & Social Ads</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            AI-powered campaign structures on Google Search, Performance Max, YouTube, and Meta Ads designed for lowest CAC and maximum ROAS.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact" onclick="setServiceInquiry('Paid Search & Social Ads')" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">
+                            Inquire for Campaign Setup <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-950 border border-slate-800 hover:border-teal-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">GA4 & GTM Telemetry</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            End-to-end Google Analytics 4, Tag Manager container setups, conversion funnel tracking, and custom KPI reporting dashboards.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact" onclick="setServiceInquiry('GA4 & GTM Telemetry')" class="text-xs font-bold text-teal-400 hover:text-teal-300 flex items-center gap-1">
+                            Inquire for Analytics <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+<!-- Service 4 -->
+                <div class="bg-slate-950 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Full-Stack & Web Dev</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Python (Django) backends, responsive HTML5/CSS/JS user interfaces, custom CRM web applications, and database optimizations.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact" onclick="setServiceInquiry('Full-Stack & Web Dev')" class="text-xs font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1">
+                            Inquire for Web Development <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Relevant MarTech Projects & Case Studies -->
+    <section id="projects" class="py-20 md:py-28 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                <div>
+                    <span class="text-amber-400 text-sm font-bold uppercase tracking-wider">Proven Record</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Relevant MarTech & Data Projects</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Featured engineering and digital marketing implementations directly from Nusrin's portfolio.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Project 1: CRM -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/50 rounded-2xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">Full-Stack MarTech</span>
+                            <span class="text-xs text-slate-500 font-mono">Python / Django</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Client Details Management System (Custom CRM)</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Engineered a full-stack CRM solution using Python (Django), jQuery, and SQLite to streamline lead tracking, consultation records, and client follow-up workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Python</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Django</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">SQLite</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">jQuery</span>
+                        </div>
+                    </div>
+                    <button onclick="openProjectModal('crm')" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-circle-info text-amber-400"></i> View Technical Details
+                    </button>
+                </div>
+
+                <!-- Project 2: FirePlay Malware/Fraud Detection -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">Data Mining & Algorithm</span>
+                            <span class="text-xs text-slate-500 font-mono">Python / Analytics</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Search Rank Fraud & Malware Detection (FirePlay)</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Built a Python data-mining model to detect search rank manipulation and algorithmic abuse on the Google Play Store, demonstrating deep expertise in search ranking signals and data analysis.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Data Mining</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Algorithmic Signals</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Python</span>
+                        </div>
+                    </div>
+                    <button onclick="openProjectModal('fireplay')" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-circle-info text-emerald-400"></i> View Technical Details
+                    </button>
+                </div>
+
+                <!-- Project 3: Traffic & Visibility Scaling -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-teal-500/50 rounded-2xl p-6 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 text-xs font-semibold border border-teal-500/20">Growth & Paid Media</span>
+                            <span class="text-xs text-slate-500 font-mono">SEO / GA4 / Ads</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Multi-Channel Organic & Paid Traffic Scaling</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Drove a <strong>+30% brand recognition</strong> lift, <strong>+25% search & social visibility</strong>, and <strong>+23.3% organic traffic growth</strong> within 6 months via technical SEO fixes, GTM/GA4 tracking containers, and paid media.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">GA4 & GTM</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Technical SEO</span>
+                            <span class="px-2 py-1 bg-slate-800 text-[10px] text-slate-300 rounded">Google/Meta Ads</span>
+                        </div>
+                    </div>
+                    <button onclick="openProjectModal('scaling')" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-circle-info text-teal-400"></i> View Campaign Results
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies, Certifications & Education -->
+    <section id="skills" class="py-20 md:py-28 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-400 text-sm font-bold uppercase tracking-wider">Qualifications</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Competencies, Certifications & Education</h2>
+                <p class="text-slate-400 text-sm">Full breakdown as listed in Nusrin Dyni's official CV.</p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                
+                <!-- Category 1 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-amber-400 flex items-center gap-2">
+                        <i class="fa-solid fa-bullseye"></i> Digital Marketing & Growth
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-slate-300">
+                        <li>• Search Engine Optimization (On-Page, Off-Page, Technical)</li>
+                        <li>• Google Ads, Meta Ads & YouTube Ads</li>
+                        <li>• Content & Email Marketing</li>
+                        <li>• Conversion Rate Optimization (CRO)</li>
+                        <li>• AI-Powered Campaign Strategy</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-emerald-400 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line"></i> Analytics & Conversion
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-slate-300">
+                        <li>• Google Analytics 4 (GA4) & GTM</li>
+                        <li>• Google Search Console (GSC)</li>
+                        <li>• Funnel & Customer Behavior Analysis</li>
+                        <li>• KPI Reporting (ROAS, ROI, CTR, CPA)</li>
+                        <li>• Bounce Rate Reduction Strategy</li>
+                    </ul>
+                </div>
+ <!-- Category 3 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-teal-400 flex items-center gap-2">
+                        <i class="fa-solid fa-code"></i> MarTech & Web Dev
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-slate-300">
+                        <li>• Python (Django) & SQLite / SQL</li>
+                        <li>• HTML5, CSS3, JavaScript, Bootstrap</li>
+                        <li>• GitHub & Version Control</li>
+                        <li>• Schema Markup Integration</li>
+                        <li>• Page Speed & Core Web Vitals</li>
+                    </ul>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-blue-400 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> Project Management
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-slate-300">
+                        <li>• Agile Project Management</li>
+                        <li>• Sprint Planning</li>
+                        <li>• Cross-Functional SDLC Collaboration</li>
+                        <li>• Executive Stakeholder Reporting</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Certifications & Academic Degree Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Certifications -->
+                <div class="lg:col-span-7 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-award text-amber-400"></i> Certifications
+                    </h3>
+                    
+                    <div class="space-y-3 text-xs">
+                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Google Ads AI-Powered Performance Ads Certification</h4>
+                                <span class="text-slate-400">Google Skillshop</span>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 font-semibold border border-amber-500/20 shrink-0">Jul 2025</span>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Artificial Intelligence and Business Strategy</h4>
+                                <span class="text-slate-400">LinkedIn Learning / NASBA CPE</span>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20 shrink-0">Jul 2025</span>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Agile Project Leadership & Management</h4>
+                                <span class="text-slate-400">LinkedIn Learning / PMI Registered Provider</span>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-teal-500/10 text-teal-400 font-semibold border border-teal-500/20 shrink-0">Jul 2025</span>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Digital Marketing Professional Training</h4>
+                                <span class="text-slate-400">Soften Technologies</span>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-semibold shrink-0">Jul 2020</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="lg:col-span-5 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-emerald-400"></i> Education
+                        </h3>
+                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                            <span class="text-xs text-emerald-400 font-bold uppercase">Bachelor Degree</span>
+                            <h4 class="text-base font-bold text-white">Bachelor of Technology (B.Tech) in Computer Science & Engineering</h4>
+                            <p class="text-xs text-slate-300">APJ Abdul Kalam Technological University</p>
+                            <p class="text-xs text-slate-400">ICET Muvattupuzha, Kerala, India • 2016 – 2020</p>
+                            <div class="pt-2 text-xs font-semibold text-amber-400">CGPA: 6.5 / 10</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button onclick="downloadPDFCV()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-slate-950 font-bold text-xs shadow-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pdf text-sm"></i>
+                            <span>Download Full Printable CV PDF</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+ <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-amber-400 text-sm font-bold uppercase tracking-wider">Direct Contact</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Let's Connect & Work Together</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Available for full-time opportunities in Saudi Arabia (Transferable Iqama), remote roles, and consulting projects.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Location -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-semibold uppercase">Location & Residency</h4>
+                                <p class="text-white font-medium text-sm">Jeddah, Saudi Arabia</p>
+                                <p class="text-xs text-emerald-400 font-medium mt-0.5">Transferable Iqama (Valid Resident Visa)</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-semibold uppercase">Direct Email</h4>
+                                <a href="mailto:nusrindyni3@gmail.com" class="text-white hover:text-amber-400 font-medium text-sm transition-colors block">
+                                    nusrindyni3@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-semibold uppercase">Phone / Mobile</h4>
+                                <a href="tel:+966548706043" class="text-white hover:text-emerald-400 font-medium text-sm transition-colors block">
+                                    +966 548706043
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-semibold uppercase">LinkedIn Profile</h4>
+                                <a href="https://linkedin.com/in/nusrin-dyni" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 font-medium text-sm transition-colors block">
+                                    linkedin.com/in/nusrin-dyni
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="lg:col-span-7 bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-2">Send an Inquiry / Job Offer</h3>
+                    <p class="text-xs text-slate-400 mb-6">Send your requirements or message directly.</p>
+
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="userName" class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name *</label>
+                                <input type="text" id="userName" required placeholder="e.g. Hiring Manager" 
+                                    class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                            <div>
+                                <label for="userEmail" class="block text-xs font-semibold text-slate-300 mb-1.5">Email Address *</label>
+                                <input type="email" id="userEmail" required placeholder="name@company.com" 
+                                    class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="userService" class="block text-xs font-semibold text-slate-300 mb-1.5">Focus Area</label>
+                                <select id="userService" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                                    <option value="Full-Time Hiring">Full-Time Hiring (Saudi Arabia)</option>
+                                    <option value="Technical & On-Page SEO">Technical & On-Page SEO</option>
+                                    <option value="Paid Search & Social Ads">Paid Search & Social Ads</option>
+                                    <option value="GA4 & GTM Telemetry">GA4 & GTM Telemetry</option>
+                                    <option value="Full-Stack & Web Dev">Full-Stack & Web Dev</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="userBudget" class="block text-xs font-semibold text-slate-300 mb-1.5">Engagement Type</label>
+                                <select id="userBudget" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                                    <option value="Full-Time (Iqama Transfer)">Full-Time (Transferable Iqama)</option>
+                                    <option value="Contract / Freelance">Contract / Freelance</option>
+                                    <option value="Consulting / Audit">Consulting / Technical Audit</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="userMessage" class="block text-xs font-semibold text-slate-300 mb-1.5">Message / Job Description *</label>
+                            <textarea id="userMessage" rows="4" required placeholder="Describe your project scope or position details..." 
+                                class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm shadow-md transition-all flex items-center justify-center space-x-2">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </form>
+
+                    <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
+                        <i class="fa-solid fa-circle-check text-lg mb-1 block"></i>
+                        Thank you for reaching out! Your message has been recorded. Nusrin will contact you shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-extrabold text-sm">
+                    ND
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Nusrin Dyni • Digital Marketing Specialist</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; <span id="currentYear"></span> Nusrin Dyni. Jeddah, Saudi Arabia. All rights reserved.
+            </p>
+
+            <div class="flex items-center space-x-4 text-xs text-slate-400">
+                <button onclick="downloadPDFCV()" class="text-emerald-400 hover:underline flex items-center gap-1">
+                    <i class="fa-solid fa-file-arrow-down"></i> PDF CV
+                </button>
+                <a href="#hero" class="hover:text-amber-400 transition-colors"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dynamic Detail Modal -->
+    <div id="modalOverlay" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 sm:p-8 space-y-6 relative shadow-2xl">
+            <button onclick="closeModal('modalOverlay')" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modalContent" class="space-y-4">
+                <!-- Dynamic Content -->
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex justify-end">
+                <button onclick="closeModal('modalOverlay')" class="px-5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold">
+                    Close Window
+                </button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- About -->
-  <section id="about" class="py-24 px-6 bg-[#10172a]">
-    <div class="max-w-5xl mx-auto">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">Get to know me</p>
-      <h2 class="heading text-4xl md:text-5xl mb-8">About Me</h2>
-      <p class="text-gray-300 leading-8 text-lg">
-        I am a Computer Science Engineering graduate with professional
-        experience in social media management and digital marketing.
-        I enjoy combining creativity, technology and marketing strategy
-        to help businesses strengthen their online presence.
-      </p>
-      <p class="text-gray-400 leading-8 mt-5">
-        My interests include social media campaigns, content creation,
-        search engine optimization, digital advertising, audience engagement
-        and performance analysis. I am continuously learning new tools
-        and strategies to grow as a digital marketing professional.
-      </p>
+    <!-- Full CV Interactive View Modal -->
+    <div id="cvViewModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col relative shadow-2xl overflow-hidden">
+            <div class="p-4 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-950">
+                <div>
+                    <h3 class="text-lg font-bold text-white">Nusrin Dyni - Curriculum Vitae</h3>
+                    <p class="text-xs text-amber-400">Digital Marketing Specialist | Performance Marketing & Technical SEO Technologist</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button onclick="downloadPDFCV()" class="px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-slate-950 text-xs font-bold transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </button>
+                    <button onclick="closeModal('cvViewModal')" class="text-slate-400 hover:text-white p-2">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-6 overflow-y-auto space-y-6 text-xs text-slate-300">
+                <!-- CV Header -->
+                <div class="border-b border-slate-800 pb-4">
+                    <h2 class="text-2xl font-bold text-white">NUSRIN DYNI</h2>
+                    <p class="text-sm font-semibold text-amber-400">Digital Marketing Specialist | Performance Marketing & Technical SEO Technologist</p>
+                    <p class="text-slate-400 mt-1">Jeddah, Saudi Arabia | Visa Status: Transferable Iqama (Valid Resident Visa)</p>
+                    <p class="text-slate-400">Phone: +966 548706043 | Email: nusrindyni3@gmail.com | LinkedIn: linkedin.com/in/nusrin-dyni</p>
+                </div>
+
+                <!-- Professional Summary -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Professional Summary</h4>
+                    <p class="leading-relaxed text-slate-300">
+                        Data-driven Digital Marketing Specialist with 3+ years of experience scaling organic search visibility, managing high-ROI paid media campaigns (Google Ads, Meta, YouTube), and executing technical SEO strategies. Combines a Computer Science & Full-Stack Web Development background (Python, Django, HTML/CSS/JS) with advanced web analytics (GA4, Google Tag Manager, Google Search Console) to implement accurate conversion tracking, optimize customer acquisition funnels, and deliver measurable revenue and traffic growth.
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Core Competencies & Technical Skills</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <span class="font-bold text-amber-400 block">Digital Marketing & Growth:</span>
+                            <p>SEO (On-Page, Off-Page & Technical), Paid Search & Social (Google Ads, Meta Ads, YouTube Ads), Content Marketing, Email Marketing, CRO, AI Campaign Strategy.</p>
+                        </div>
+                        <div>
+                            <span class="font-bold text-emerald-400 block">Analytics & Tracking:</span>
+                            <p>Google Analytics 4 (GA4), GTM, GSC, Funnel & Customer Behavior Analysis, KPI Reporting (ROAS, ROI, CTR, CPA, Bounce Rate).</p>
+                        </div>
+                        <div>
+                            <span class="font-bold text-teal-400 block">MarTech & Web Dev:</span>
+                            <p>Python (Django), HTML5, CSS3, JavaScript, SQL, SQLite, Bootstrap, GitHub, Schema Markup, Core Web Vitals Optimization.</p>
+                        </div>
+                        <div>
+                            <span class="font-bold text-blue-400 block">Project Management:</span>
+                            <p>Agile Project Management, Sprint Planning, Cross-Functional SDLC Collaboration, Stakeholder Reporting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Professional Experience</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between font-bold text-slate-200">
+                                <span>Digital Marketing Specialist (Consultant) | Freelance</span>
+                                <span class="text-amber-400">2023 – Present</span>
+                            </div>
+                            <p class="mt-1">• Increased organic search visibility and qualified website traffic for client domains by executing comprehensive on-page, off-page, and technical SEO audits, keyword gap analyses, and authoritative backlink acquisition.</p>
+                            <p>• Improved campaign attribution accuracy and conversion tracking reliability by configuring custom event tags, triggers, and goal funnels via Google Tag Manager (GTM) and Google Analytics.</p>
+                            <p>• Accelerated lead capture and client follow-up efficiency by engineering a custom CRM web application (Django, jQuery, SQLite) to centralize customer consultation logs and lifecycle tracking.</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between font-bold text-slate-200">
+                                <span>Digital Marketing Executive | Varada Biz</span>
+                                <span class="text-amber-400">2022 – 2023</span>
+                            </div>
+                            <p class="mt-1">• Boosted overall brand visibility by 25% across search and social channels by designing and executing integrated multi-channel SEO, content marketing, and social media campaigns.</p>
+                            <p>• Elevated organic SERP rankings and domain authority by conducting high-intent keyword research, optimizing meta structures, and refining content architecture aligned with search intent.</p>
+                            <p>• Maximized campaign efficiency and reduced wasted ad spend by continuously monitoring user behavior, bounce rates, and conversion KPIs through Google Analytics and Google Search Console.</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between font-bold text-slate-200">
+                                <span>Python Django Developer (Intern) | Inmakes Info Technology</span>
+                                <span class="text-amber-400">2023</span>
+                            </div>
+                            <p class="mt-1">• Strengthened technical web infrastructure and backend scalability by developing structured database models and server-side logic in Python/Django, directly supporting technical SEO and site performance.</p>
+                            <p>• Enhanced front-end usability and cross-device responsiveness by collaborating with UI/UX teams within an Agile Software Development Life Cycle (SDLC) environment.</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between font-bold text-slate-200">
+                                <span>Junior Digital Marketing Executive | Soften Technologies</span>
+                                <span class="text-amber-400">Aug 2020 – Jan 2021</span>
+                            </div>
+                            <p class="mt-1">• Enhanced brand recognition by 30% across key digital touchpoints by formulating and executing end-to-end paid and organic campaigns on Google, Facebook, Instagram, and Twitter.</p>
+                            <p>• Grew organic website traffic by 23.3% within six months by implementing technical SEO fixes, image compression, and SEO-optimized content production.</p>
+                            <p>• Improved marketing reporting granularity and audience targeting by deploying Google Tag Manager tracking containers and analyzing traffic trends via Google Analytics.</p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between font-bold text-slate-200">
+                                <span>Web Developer (Intern) | Laxmi InfoTech</span>
+                                <span class="text-amber-400">2017</span>
+                            </div>
+                            <p class="mt-1">• Improved front-end page layout and user navigation flow by building responsive HTML/CSS web components focused on usability and cross-browser functionality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Relevant MarTech & Data Projects</h4>
+                    <p>• <strong>Client Details Management System (Custom CRM):</strong> Engineered a full-stack CRM solution using Python (Django), jQuery, and SQLite to streamline lead tracking, consultation records, and client follow-up workflows.</p>
+                    <p class="mt-1">• <strong>Search Rank Fraud & Malware Detection (FirePlay):</strong> Built a Python data-mining model to detect search rank manipulation and algorithmic abuse on the Google Play Store, demonstrating deep expertise in search ranking signals and data analysis.</p>
+                </div>
+                <!-- Certifications & Education -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Certifications & Education</h4>
+                    <p>• Google Ads AI-Powered Performance Ads Certification - Google Skillshop (Jul 2025)</p>
+                    <p>• Artificial Intelligence and Business Strategy - LinkedIn Learning / NASBA CPE (Jul 2025)</p>
+                    <p>• Agile Project Leadership & Management - LinkedIn Learning / PMI Registered Provider (Jul 2025)</p>
+                    <p>• Digital Marketing Professional Training - Soften Technologies (Jul 2020)</p>
+                    <p class="mt-2 text-slate-200 font-semibold">Bachelor of Technology (B.Tech) in Computer Science & Engineering</p>
+                    <p class="text-slate-400">APJ Abdul Kalam Technological University | ICET Muvattupuzha, Kerala, India (2016–2020) | CGPA: 6.5/10</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- Skills -->
-  <section id="skills" class="py-24 px-6">
-    <div class="max-w-6xl mx-auto">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">What I do</p>
-      <h2 class="heading text-4xl md:text-5xl mb-12">My Skills & Expertise</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="glass p-7 rounded-2xl">
-          <div class="text-3xl mb-4">📱</div>
-          <h3 class="font-bold text-xl mb-3">Social Media Marketing</h3>
-          <p class="text-gray-400">Social media planning, account management, engagement and brand awareness.</p>
+    <!-- Hidden HTML Canvas Template for PDF Generation -->
+    <div id="pdfPrintContainer" class="fixed top-[-9999px] left-[-9999px] w-[800px] bg-white text-slate-900 p-8 font-sans leading-normal">
+        <!-- Header -->
+        <div style="border-bottom: 2px solid #0f172a; padding-bottom: 12px; margin-bottom: 14px;">
+            <h1 style="font-size: 24px; font-weight: 800; color: #0f172a; text-transform: uppercase; margin: 0;">NUSRIN DYNI</h1>
+            <h2 style="font-size: 13px; font-weight: 700; color: #d97706; margin: 4px 0 6px 0;">Digital Marketing Specialist | Performance Marketing & Technical SEO Technologist</h2>
+            <div style="font-size: 11px; color: #334155;">
+                Jeddah, Saudi Arabia &nbsp;|&nbsp; <strong>Visa Status: Transferable Iqama (Valid Resident Visa)</strong>
+            </div>
+            <div style="font-size: 11px; color: #334155; margin-top: 2px;">
+                Phone: +966 548706043 &nbsp;|&nbsp; Email: nusrindyni3@gmail.com &nbsp;|&nbsp; LinkedIn: linkedin.com/in/nusrin-dyni
+            </div>
         </div>
-        <div class="glass p-7 rounded-2xl">
-          <div class="text-3xl mb-4">✍️</div>
-          <h3 class="font-bold text-xl mb-3">Content Creation</h3>
-          <p class="text-gray-400">Creative captions, content calendars, reels concepts and promotional content.</p>
+
+        <!-- Summary -->
+        <div style="margin-bottom: 14px;">
+            <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Professional Summary</h3>
+            <p style="font-size: 10.5px; color: #1e293b; text-align: justify; margin: 0;">
+                Data-driven Digital Marketing Specialist with 3+ years of experience scaling organic search visibility, managing high-ROI paid media campaigns (Google Ads, Meta, YouTube), and executing technical SEO strategies. Combines a Computer Science & Full-Stack Web Development background (Python, Django, HTML/CSS/JS) with advanced web analytics (GA4, Google Tag Manager, Google Search Console) to implement accurate conversion tracking, optimize customer acquisition funnels, and deliver measurable revenue and traffic growth.
+            </p>
         </div>
-        <div class="glass p-7 rounded-2xl">
-          <div class="text-3xl mb-4">🔎</div>
-          <h3 class="font-bold text-xl mb-3">SEO</h3>
-          <p class="text-gray-400">Keyword research, on-page SEO fundamentals and content optimization.</p>
+
+        <!-- Skills -->
+        <div style="margin-bottom: 14px;">
+            <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Core Competencies & Technical Skills</h3>
+            <table style="width: 100%; font-size: 10px; border-collapse: collapse;">
+                <tr>
+                    <td style="vertical-align: top; width: 50%; padding-right: 8px; padding-bottom: 6px;">
+                        <strong style="color: #0f172a;">Digital Marketing & Growth:</strong><br>
+                        SEO (On-Page, Off-Page & Technical SEO), Paid Search & Social (Google Ads, Meta Ads, YouTube Ads), Content Marketing, Email Marketing, Conversion Rate Optimization (CRO), AI-Powered Campaign Strategy.
+                    </td>
+                    <td style="vertical-align: top; width: 50%; padding-left: 8px; padding-bottom: 6px;">
+                        <strong style="color: #0f172a;">Analytics & Conversion Tracking:</strong><br>
+                        Google Analytics 4 (GA4), Google Tag Manager (GTM), Google Search Console (GSC), Funnel & Customer Behavior Analysis, KPI Reporting (ROAS, ROI, CTR, CPA, Bounce Rate).
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; width: 50%; padding-right: 8px;">
+                        <strong style="color: #0f172a;">MarTech & Web Development:</strong><br>
+                        Python (Django), HTML5, CSS3, JavaScript, SQL, SQLite, Bootstrap, GitHub, Schema Markup, Page Speed & Core Web Vitals Optimization.
+                    </td>
+                    <td style="vertical-align: top; width: 50%; padding-left: 8px;">
+                        <strong style="color: #0f172a;">Project & Workflow Management:</strong><br>
+                        Agile Project Management, Sprint Planning, Cross-Functional Collaboration, Stakeholder Reporting.
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="glass p-7 rounded-2xl">
-          <div class="text-3xl mb-4">📊</div>
-          <h3 class="font-bold text-xl mb-3">Marketing Analytics</h3>
-          <p class="text-gray-400">Campaign monitoring, performance reporting and audience insights.</p>
+
+        <!-- Experience -->
+        <div style="margin-bottom: 14px;">
+            <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Professional Experience</h3>
+            
+            <div style="margin-bottom: 8px;">
+                <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
+                    <span>Digital Marketing Specialist (Consultant) | Freelance</span>
+                    <span>2023 – Present</span>
+                </div>
+                <div style="font-size: 10px; color: #334155; margin-top: 2px;">
+                    • Increased organic search visibility and qualified website traffic for client domains by executing comprehensive on-page, off-page, and technical SEO audits, keyword gap analyses, and authoritative backlink acquisition.<br>
+                    • Improved campaign attribution accuracy and conversion tracking reliability by configuring custom event tags, triggers, and goal funnels via Google Tag Manager (GTM) and Google Analytics.<br>
+                    • Accelerated lead capture and client follow-up efficiency by engineering a custom CRM web application (Django, jQuery, SQLite) to centralize customer consultation logs and lifecycle tracking.
+                </div>
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
+                    <span>Digital Marketing Executive | Varada Biz</span>
+                    <span>2022 – 2023</span>
+                </div>
+                <div style="font-size: 10px; color: #334155; margin-top: 2px;">
+                    • Boosted overall brand visibility by 25% across search and social channels by designing and executing integrated multi-channel SEO, content marketing, and social media campaigns.<br>
+                    • Elevated organic SERP rankings and domain authority by conducting high-intent keyword research, optimizing meta structures, and refining content architecture aligned with search intent.<br>
+                    • Maximized campaign efficiency and reduced wasted ad spend by continuously monitoring user behavior, bounce rates, and conversion KPIs through Google Analytics and Google Search Console.
+                </div>
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
+                    <span>Python Django Developer (Intern) | Inmakes Info Technology</span>
+                    <span>2023</span>
+                </div>
+                <div style="font-size: 10px; color: #334155; margin-top: 2px;">
+                    • Strengthened technical web infrastructure and backend scalability by developing structured database models and server-side logic in Python/Django, directly supporting technical SEO and site performance.<br>
+                    • Enhanced front-end usability and cross-device responsiveness by collaborating with UI/UX teams within an Agile Software Development Life Cycle (SDLC) environment.
+                </div>
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
+                    <span>Junior Digital Marketing Executive | Soften Technologies</span>
+                    <span>Aug 2020 – Jan 2021</span>
+                </div>
+                <div style="font-size: 10px; color: #334155; margin-top: 2px;">
+                    • Enhanced brand recognition by 30% across key digital touchpoints by formulating and executing end-to-end paid and organic campaigns on Google, Facebook, Instagram, and Twitter.<br>
+                    • Grew organic website traffic by 23.3% within six months by implementing technical SEO fixes, image compression, and SEO-optimized content production.<br>
+                    • Improved marketing reporting granularity and audience targeting by deploying Google Tag Manager tracking containers and analyzing traffic trends via Google Analytics.
+                </div>
+            </div>
+
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
+                    <span>Web Developer (Intern) | Laxmi InfoTech</span>
+                    <span>2017</span>
+                </div>
+                <div style="font-size: 10px; color: #334155; margin-top: 2px;">
+                    • Improved front-end page layout and user navigation flow by building responsive HTML/CSS web components focused on usability and cross-browser functionality.
+                </div>
+            </div>
         </div>
-        <div class="glass p-7 rounded-2xl">
-          <div class="text-3xl mb-4">🎯</div>
-          <h3 class="font-bold text-xl mb-3">Digital Advertising</h3>
-          <p class="text-gray-400">Google Ads concepts, campaign planning and performance-focused marketing.</p>
+
+        <!-- Projects -->
+        <div style="margin-bottom: 14px;">
+            <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Relevant MarTech & Data Projects</h3>
+            <div style="font-size: 10px; color: #334155;">
+                • <strong>Client Details Management System (Custom CRM):</strong> Engineered a full-stack CRM solution using Python (Django), jQuery, and SQLite to streamline lead tracking, consultation records, and client follow-up workflows.<br>
+                • <strong>Search Rank Fraud & Malware Detection (FirePlay):</strong> Built a Python data-mining model to detect search rank manipulation and algorithmic abuse on the Google Play Store, demonstrating deep expertise in search ranking signals and data analysis.
+            </div>
         </div>
-        <div class="glass p-7 rounded-2xl">
-          <div class="text-3xl mb-4">💻</div>
-          <h3 class="font-bold text-xl mb-3">Technology</h3>
-          <p class="text-gray-400">Computer Science background, basic Python and web development knowledge.</p>
+
+        <!-- Certifications & Education -->
+        <div>
+            <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Certifications & Education</h3>
+            <div style="font-size: 10px; color: #334155;">
+                • Google Ads AI-Powered Performance Ads Certification — Google Skillshop (Jul 2025)<br>
+                • Artificial Intelligence and Business Strategy — LinkedIn Learning / NASBA CPE (Jul 2025)<br>
+                • Agile Project Leadership & Management — LinkedIn Learning / PMI Registered Provider (Jul 2025)<br>
+                • Digital Marketing Professional Training — Soften Technologies (Jul 2020)<br>
+                <div style="margin-top: 4px;">
+                    <strong>Bachelor of Technology (B.Tech) in Computer Science & Engineering</strong> — APJ Abdul Kalam Technological University (ICET Muvattupuzha, Kerala, India), 2016–2020 | <strong>CGPA: 6.5/10</strong>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+<!-- JavaScript Engine -->
+    <script>
+        // Set dynamic current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-  <!-- Experience -->
-  <section id="experience" class="py-24 px-6 bg-[#10172a]">
-    <div class="max-w-5xl mx-auto">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">My journey</p>
-      <h2 class="heading text-4xl md:text-5xl mb-12">Work Experience</h2>
-      <div class="space-y-8 border-l border-violet-500/40 ml-3 pl-8">
-        <div class="relative">
-          <span class="absolute -left-[38px] top-1 w-4 h-4 bg-violet-500 rounded-full"></span>
-          <p class="text-violet-300 text-sm">2024 – Present</p>
-          <h3 class="text-xl font-bold mt-2">Freelance Social Media Marketing</h3>
-          <p class="text-gray-400 mt-2">Content planning, social media support and digital promotional activities.</p>
-        </div>
-        <div class="relative">
-          <span class="absolute -left-[38px] top-1 w-4 h-4 bg-violet-500 rounded-full"></span>
-          <p class="text-violet-300 text-sm">2021 – 2022</p>
-          <h3 class="text-xl font-bold mt-2">Social Media Executive – Varada Biz</h3>
-          <p class="text-gray-400 mt-2">Social media activities, content coordination and online brand communication.</p>
-        </div>
-        <div class="relative">
-          <span class="absolute -left-[38px] top-1 w-4 h-4 bg-violet-500 rounded-full"></span>
-          <p class="text-violet-300 text-sm">2020 – 2021</p>
-          <h3 class="text-xl font-bold mt-2">Digital Marketing Executive – Softern Technologies</h3>
-          <p class="text-gray-400 mt-2">Digital marketing support and online promotional activities.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        // Mobile Menu Drawer Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-  <!-- Projects -->
-  <section id="projects" class="py-24 px-6">
-    <div class="max-w-6xl mx-auto">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">Selected work</p>
-      <h2 class="heading text-4xl md:text-5xl mb-4">Featured Projects</h2>
-      <p class="text-gray-400 mb-12">A selection of marketing concepts and digital work. Add your real campaign examples and results here.</p>
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="project-card glass rounded-2xl overflow-hidden">
-          <div class="h-44 bg-gradient-to-br from-violet-700 to-indigo-950 flex items-center justify-center text-5xl">📱</div>
-          <div class="p-6">
-            <p class="text-violet-300 text-sm">Social Media</p>
-            <h3 class="font-bold text-xl mt-2">Social Media Campaigns</h3>
-            <p class="text-gray-400 text-sm mt-3">Content ideas, promotional posts and engagement-focused campaign planning.</p>
-          </div>
-        </article>
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
 
-        <article class="project-card glass rounded-2xl overflow-hidden">
-          <div class="h-44 bg-gradient-to-br from-blue-700 to-slate-950 flex items-center justify-center text-5xl">🎨</div>
-          <div class="p-6">
-            <p class="text-violet-300 text-sm">Creative Marketing</p>
-            <h3 class="font-bold text-xl mt-2">Promotional Designs</h3>
-            <p class="text-gray-400 text-sm mt-3">Marketing visuals and promotional concepts for products and services.</p>
-          </div>
-        </article>
+        // Set service selection in form
+        function setServiceInquiry(serviceName) {
+            const selectElem = document.getElementById('userService');
+            if(selectElem) {
+                selectElem.value = serviceName;
+            }
+        }
 
-        <article class="project-card glass rounded-2xl overflow-hidden">
-          <div class="h-44 bg-gradient-to-br from-fuchsia-700 to-purple-950 flex items-center justify-center text-5xl">🌐</div>
-          <div class="p-6">
-            <p class="text-violet-300 text-sm">Web Presence</p>
-            <h3 class="font-bold text-xl mt-2">Personal Portfolio Website</h3>
-            <p class="text-gray-400 text-sm mt-3">Personal branding and portfolio development using web technologies.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+        // Contact Form Submission Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('submitBtn');
+            const successBox = document.getElementById('formSuccess');
 
-  <!-- Certifications -->
-  <section class="py-24 px-6 bg-[#10172a]">
-    <div class="max-w-5xl mx-auto">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">Continuous learning</p>
-      <h2 class="heading text-4xl md:text-5xl mb-10">Certifications</h2>
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="glass p-5 rounded-xl">✓ Agile Project Management Certification</div>
-        <div class="glass p-5 rounded-xl">✓ AI-Powered Performance Ads Certification</div>
-        <div class="glass p-5 rounded-xl">✓ Artificial Intelligence and Business Strategy</div>
-        <div class="glass p-5 rounded-xl">✓ Google Play Store Listing Certification</div>
-      </div>
-    </div>
-  </section>
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin text-xs"></i> <span>Sending...</span>`;
 
-  <!-- Education -->
-  <section class="py-20 px-6">
-    <div class="max-w-5xl mx-auto">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">Academic background</p>
-      <h2 class="heading text-4xl mb-8">Education</h2>
-      <div class="glass p-7 rounded-2xl">
-        <h3 class="text-xl font-bold">Bachelor of Technology – Computer Science Engineering</h3>
-        <p class="text-gray-400 mt-2">Ilahia College of Engineering and Technology</p>
-        <p class="text-violet-300 mt-2">2016 – 2020</p>
-      </div>
-    </div>
-  </section>
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<span>Send Message</span> <i class="fa-solid fa-paper-plane text-xs"></i>`;
+                successBox.classList.remove('hidden');
+                document.getElementById('contactForm').reset();
 
-  <!-- Contact -->
-  <section id="contact" class="py-24 px-6 bg-[#10172a]">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="text-violet-400 uppercase tracking-widest text-sm mb-3">Let's work together</p>
-      <h2 class="heading text-4xl md:text-6xl mb-6">Let's Create Something Great.</h2>
-      <p class="text-gray-400 mb-10">Open to digital marketing opportunities and professional collaborations.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="mailto:nusrindyni3@gmail.com" class="bg-violet-600 hover:bg-violet-700 px-7 py-3 rounded-full">Email Me</a>
-        <a href="https://linkedin.com/in/nusrin-dyni" target="_blank" rel="noopener noreferrer" class="border border-white/30 hover:border-violet-400 px-7 py-3 rounded-full">LinkedIn</a>
-      </div>
-      <p class="text-gray-400 mt-8">Jeddah, Saudi Arabia</p>
-    </div>
-  </section>
+                setTimeout(() => {
+                    successBox.classList.add('hidden');
+                }, 6000);
+            }, 1200);
+        }
 
-  <footer class="py-7 text-center text-gray-500 text-sm border-t border-white/10">
-    © 2026 Nusrin Dyni. All rights reserved.
-  </footer>
+        // Modal Helpers
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
 
+        function openCVPreviewModal() {
+            const modal = document.getElementById('cvViewModal');
+            if(modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+
+        // Project Modals
+        const projectData = {
+            crm: {
+                title: "Client Details Management System (Custom CRM)",
+                tag: "Full-Stack Python/Django MarTech",
+                desc: "Engineered a full-stack CRM solution using Python (Django), jQuery, and SQLite to streamline lead tracking, consultation records, and client follow-up workflows.",
+                stack: ["Python", "Django", "SQLite", "jQuery", "HTML5/CSS3"],
+                highlights: [
+                    "Centralized lead acquisition data from paid ad landing pages directly into structured SQLite database models.",
+                    "Implemented custom lifecycle tracking metrics for prospective clients in Saudi Arabia.",
+                    "Improved client follow-up speed and pipeline efficiency significantly."
+                ]
+            },
+            fireplay: {
+                title: "Search Rank Fraud & Malware Detection (FirePlay)",
+                tag: "Data Mining & Algorithm Abuse Detection",
+                desc: "Built a Python data-mining model to detect search rank manipulation and algorithmic abuse on the Google Play Store, demonstrating deep expertise in search ranking signals and data analysis.",
+                stack: ["Python", "Data Mining", "Search Algorithms", "Pattern Recognition"],
+                highlights: [
+                    "Analyzed anomalous review spikes, rating distributions, and keyword stuffing indicators.",
+                    "Identified fraudulent ranking boosts across competitive Play Store app listings.",
+                    "Applied algorithmic ranking logic to SEO keyword strategy and organic search visibility."
+                ]
+            },
+            scaling: {
+                title: "Multi-Channel Organic & Paid Growth Scaling",
+                tag: "Growth Marketing & Telemetry",
+                desc: "Drove +30% brand recognition, +25% search & social visibility, and +23.3% organic website traffic growth within 6 months via technical SEO fixes, GTM/GA4 tracking containers, and paid media.",
+                stack: ["GA4", "Google Tag Manager", "Technical SEO", "Google Ads", "Meta Ads"],
+                highlights: [
+                    "Built customized GTM event tags and GA4 goal funnels to eliminate attribution loss.",
+                    "Fixed Core Web Vitals, metadata, image compression, and crawling errors.",
+                    "Optimized paid search & social ad spend to maximize ROAS."
+                ]
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = projectData[key];
+            if (!data) return;
+
+            const content = document.getElementById('modalContent');
+            content.innerHTML = `
+                <div class="space-y-4">
+                    <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">${data.tag}</span>
+                    <h3 class="text-2xl font-bold text-white">${data.title}</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">${data.desc}</p>
+                    
+                    <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
+                        <h4 class="text-xs font-bold text-amber-400 uppercase">Key Implementation Highlights:</h4>
+                        <ul class="space-y-1.5 text-xs text-slate-300">
+                            ${data.highlights.map(h => `<li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> <span>${h}</span></li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="text-xs text-slate-400 font-semibold block mb-2">Technologies Used:</span>
+                        <div class="flex flex-wrap gap-2">
+                            ${data.stack.map(s => `<span class="px-2.5 py-1 rounded bg-slate-800 text-slate-200 text-xs font-medium">${s}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const overlay = document.getElementById('modalOverlay');
+            overlay.classList.remove('hidden');
+            overlay.classList.add('flex');
+        }
+
+        // Functional PDF Download Engine for DigitalMarketing_NusrinDyni_Cv.pdf
+        async function downloadPDFCV() {
+            const btnList = document.querySelectorAll('button[onclick*="downloadPDFCV"]');
+            btnList.forEach(btn => {
+                btn.disabled = true;
+                btn.dataset.originalHTML = btn.innerHTML;
+                btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> <span>Generating PDF...</span>`;
+            });
+
+            try {
+                const element = document.getElementById('pdfPrintContainer');
+                
+                // Use html2canvas to render the hidden structured CV template into high-res canvas
+                const canvas = await html2canvas(element, {
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: '#ffffff',
+                    logging: false
+                });
+
+                const imgData = canvas.toDataURL('image/jpeg', 0.98);
+                const { jsPDF } = window.jspdf;
+                
+                // Create clean portrait A4 PDF
+                const pdf = new jsPDF({
+                    orientation: 'p',
+                    unit: 'mm',
+                    format: 'a4'
+                });
+
+                const imgWidth = 210; // A4 width in mm
+                const pageHeight = 297; // A4 height in mm
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                
+                let heightLeft = imgHeight;
+                let position = 0;
+
+                pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+
+                while (heightLeft > 0) {
+                    position = heightLeft - imgHeight;
+                    pdf.addPage();
+                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+
+                // Trigger direct file download
+                pdf.save('DigitalMarketing_NusrinDyni_Cv.pdf');
+
+            } catch (err) {
+                console.error("PDF generation fallback:", err);
+                // Reliable Fallback: Open print dialog for instant PDF print/save
+                const printWindow = window.open('', '_blank');
+                const cvHtml = document.getElementById('pdfPrintContainer').innerHTML;
+                printWindow.document.write(`
+                    <html>
+                    <head>
+                        <title>DigitalMarketing_NusrinDyni_Cv</title>
+                        <style>
+                            body { font-family: sans-serif; padding: 20px; color: #0f172a; }
+                            @page { size: A4; margin: 15mm; }
+                        </style>
+                    </head>
+                    <body>
+                        ${cvHtml}
+                        <script>
+                            window.onload = function() { window.print(); window.close(); }
+                        <\/script>
+                    </body>
+                    </html>
+                `);
+                printWindow.document.close();
+            } finally {
+                btnList.forEach(btn => {
+                    btn.disabled = false;
+                    if(btn.dataset.originalHTML) {
+                        btn.innerHTML = btn.dataset.originalHTML;
+                    }
+                });
+            }
+        }
+    </script>
 </body>
 </html>
