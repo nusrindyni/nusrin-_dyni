@@ -91,7 +91,6 @@
                     <span class="text-xs text-amber-400 font-medium">Digital Marketing & Technical SEO</span>
                 </div>
             </a>
-
             <!-- Desktop Nav Links -->
             <nav class="hidden md:flex items-center space-x-7 text-sm font-medium">
                 <a href="#about" class="text-slate-300 hover:text-amber-400 transition-colors">About</a>
@@ -106,13 +105,11 @@
                     Partner With Me
                 </a>
             </nav>
-
             <!-- Mobile Menu Toggle Button -->
             <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none">
                 <i class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
-
         <!-- Mobile Drawer -->
         <div id="mobileMenu" class="hidden md:hidden px-4 pt-4 pb-6 space-y-3 bg-slate-900/95 border-b border-slate-800">
             <a href="#about" class="block text-slate-300 hover:text-amber-400 py-2 text-base font-medium">About</a>
@@ -133,8 +130,7 @@
     <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-gradient overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Column: Copy & CTAs -->
+  <!-- Left Column: Copy & CTAs -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm text-amber-400 font-medium">
                         <span class="flex items-center gap-1.5">
@@ -143,18 +139,15 @@
                         </span>
                         <span class="text-slate-600">•</span>
                         <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-passport text-xs mr-1"></i>Transferable Iqama</span>
-                    </div>
-
+                    </div
                     <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
                         Nusrin Dyni <br class="hidden sm:inline">
                         <span class="accent-gradient-text text-2xl sm:text-4xl lg:text-5xl block mt-1">Digital Marketing & Technical SEO Technologist</span>
                     </h1>
-
                     <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
                         Data-driven Digital Marketing Specialist with <strong>3+ years of experience</strong> scaling organic search visibility, managing high-ROI paid media campaigns (Google Ads, Meta, YouTube), and executing technical SEO. Combines a <strong>Computer Science & Full-Stack Web Development background</strong> (Python, Django, HTML/CSS/JS) with advanced analytics (GA4, GTM, GSC) to drive measurable revenue growth.
                     </p>
-
-                    <!-- Direct Contact Quick Badges -->
+ <!-- Direct Contact Quick Badges -->
                     <div class="pt-1 flex flex-wrap justify-center lg:justify-start gap-3 text-xs sm:text-sm text-slate-300">
                         <a href="mailto:nusrindyni3@gmail.com" class="px-3 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-800 border border-slate-700 flex items-center gap-2 hover:text-amber-400 transition-colors">
                             <i class="fa-solid fa-envelope text-amber-400"></i> nusrindyni3@gmail.com
@@ -166,7 +159,6 @@
                             <i class="fa-brands fa-linkedin text-blue-400"></i> linkedin.com/in/nusrin-dyni
                         </a>
                     </div>
-
                     <!-- Call To Actions -->
                     <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                         <button onclick="downloadPDFCV()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-slate-950 font-bold text-base shadow-xl shadow-emerald-500/20 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
@@ -183,13 +175,11 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- Right Column: Verification & Experience Card -->
+    <!-- Right Column: Verification & Experience Card -->
                 <div class="lg:col-span-5">
                     <div class="relative max-w-md mx-auto">
                         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-amber-500 to-emerald-500 opacity-20 blur-xl"></div>
-                        
-                        <!-- Profile Highlight Card -->
+                         <!-- Profile Highlight Card -->
                         <div class="relative bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 shadow-2xl space-y-5">
                             <div class="flex items-center justify-between pb-4 border-b border-slate-700/60">
                                 <div class="flex items-center space-x-3">
@@ -212,23 +202,22 @@
                                     <span class="text-white font-semibold">Jeddah, KSA (Transferable Iqama)</span>
                                 </div>
 
-                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+  <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
                                     <span class="text-slate-400 font-medium">Core Stack:</span>
                                     <span class="text-amber-400 font-semibold">SEO, GA4, GTM, Google/Meta Ads</span>
                                 </div>
 
-                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+<div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
                                     <span class="text-slate-400 font-medium">Technical Dev:</span>
                                     <span class="text-emerald-400 font-semibold">Python (Django), JS, HTML5, SQL</span>
                                 </div>
 
-                                <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
+  <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/40 flex items-center justify-between text-xs">
                                     <span class="text-slate-400 font-medium">Degree:</span>
                                     <span class="text-teal-300 font-semibold">B.Tech Computer Science & Eng.</span>
                                 </div>
                             </div>
-
-                            <!-- Direct CV Action -->
+ <!-- Direct CV Action -->
                             <div class="pt-2">
                                 <button onclick="downloadPDFCV()" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-950 border border-emerald-500/40 text-emerald-400 font-bold text-xs transition-colors flex items-center justify-center gap-2">
                                     <i class="fa-solid fa-download"></i>
@@ -238,7 +227,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -265,13 +253,11 @@
             </div>
         </div>
     </section>
-
     <!-- Professional Summary & Bio -->
     <section id="about" class="py-20 md:py-28 bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Narrative Card -->
+                   <!-- Left Narrative Card -->
                 <div class="lg:col-span-5">
                     <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl">
                         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">
@@ -282,7 +268,7 @@
                             Nusrin Dyni bridges marketing, analytics, and software engineering. Armed with a Computer Science degree and hands-on Python/Django full-stack experience, she builds bulletproof conversion tracking systems and SEO-optimized acquisition channels.
                         </p>
                         
-                        <div class="space-y-3 pt-2 text-xs">
+   <div class="space-y-3 pt-2 text-xs">
                             <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800">
                                 <span class="text-slate-400">Resident Visa:</span>
                                 <span class="text-emerald-400 font-semibold">Valid Transferable Iqama (Saudi Arabia)</span>
@@ -297,15 +283,14 @@
                             </div>
                         </div>
 
-                        <div class="pt-2">
+   <div class="pt-2">
                             <button onclick="downloadPDFCV()" class="w-full py-3 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs transition-colors flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-download"></i> Download Official CV PDF
                             </button>
                         </div>
                     </div>
                 </div>
-
-                <!-- Right Core Strengths -->
+     <!-- Right Core Strengths -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-block text-amber-400 text-sm font-bold uppercase tracking-wider">
                         Core Value Proposition
@@ -313,12 +298,10 @@
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
                         Combining Engineering Logic with Data-Driven Acquisition
                     </h2>
-
-                    <p class="text-slate-300 text-base leading-relaxed">
+    <p class="text-slate-300 text-base leading-relaxed">
                         Many digital marketers operate solely at the campaign level, missing key technical issues on websites or inaccurate event tracking. Nusrin Dyni diagnoses page speed bottlenecks, custom schema markup, server-side data logs, and GTM script conflicts directly in the code.
                     </p>
-
-                    <!-- Pillars -->
+    <!-- Pillars -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                         <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
                             <div class="text-amber-400 font-bold text-base flex items-center gap-2">
@@ -327,21 +310,21 @@
                             <p class="text-xs text-slate-300">Executing exhaustive site audits, Core Web Vitals optimizations, keyword gap analyses, and high-DA backlink strategies.</p>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+   <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
                             <div class="text-emerald-400 font-bold text-base flex items-center gap-2">
                                 <i class="fa-solid fa-bullseye"></i> Paid Media & ROAS Scaling
                             </div>
                             <p class="text-xs text-slate-300">Managing Google Ads (Search, YouTube, PMax) & Meta Ads with AI-powered audience targeting to minimize CPA.</p>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+ <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
                             <div class="text-teal-400 font-bold text-base flex items-center gap-2">
                                 <i class="fa-solid fa-chart-diagram"></i> Precise GA4 & GTM Telemetry
                             </div>
                             <p class="text-xs text-slate-300">Building custom triggers, data layers, and conversion funnels to ensure 100% reliable campaign attribution.</p>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
+   <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 space-y-2">
                             <div class="text-blue-400 font-bold text-base flex items-center gap-2">
                                 <i class="fa-solid fa-code font-mono"></i> Web & CRM Engineering
                             </div>
@@ -350,11 +333,10 @@
                     </div>
                 </div>
 
-            </div>
+ </div>
         </div>
     </section>
-
-    <!-- Work Experience Timeline Section -->
+ <!-- Work Experience Timeline Section -->
     <section id="experience" class="py-20 md:py-28 bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -362,11 +344,9 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Professional Experience</h2>
                 <p class="text-slate-400 text-sm">3+ years of track record across digital marketing agencies, software development teams, and independent consulting.</p>
             </div>
-
-            <!-- Timeline Stack -->
+    <!-- Timeline Stack -->
             <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:-ml-px before:w-0.5 before:bg-slate-800">
-                
-                <!-- Experience 1 -->
+                   <!-- Experience 1 -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                         <i class="fa-solid fa-briefcase text-xs"></i>
@@ -424,8 +404,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Experience 3 -->
+   <!-- Experience 3 -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                         <i class="fa-solid fa-code text-xs"></i>
@@ -450,8 +429,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Experience 4 -->
+     <!-- Experience 4 -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                         <i class="fa-solid fa-bullhorn text-xs"></i>
@@ -509,8 +487,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Experience 3 -->
+   <!-- Experience 3 -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                         <i class="fa-solid fa-code text-xs"></i>
@@ -535,8 +512,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Experience 4 -->
+      <!-- Experience 4 -->
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold shadow-lg shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                         <i class="fa-solid fa-bullhorn text-xs"></i>
@@ -584,11 +560,10 @@
                     </div>
                 </div>
 
-            </div>
+</div>
         </div>
     </section>
-
-    <!-- Services Offered -->
+   <!-- Services Offered -->
     <section id="services" class="py-20 md:py-28 bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -596,10 +571,8 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Specialized Digital Growth Solutions</h2>
                 <p class="text-slate-400 text-sm">Aligning organic reach, paid advertising precision, and code-level technical web optimizations.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Service 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <!-- Service 1 -->
                 <div class="bg-slate-950 border border-slate-800 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
                     <div class="space-y-4">
                         <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl">
@@ -616,8 +589,7 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Service 2 -->
+   <!-- Service 2 -->
                 <div class="bg-slate-950 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
                     <div class="space-y-4">
                         <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl">
@@ -634,8 +606,7 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Service 3 -->
+   <!-- Service 3 -->
                 <div class="bg-slate-950 border border-slate-800 hover:border-teal-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
                     <div class="space-y-4">
                         <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl">
@@ -670,11 +641,10 @@
                     </div>
                 </div>
 
-            </div>
+  </div>
         </div>
     </section>
-
-    <!-- Relevant MarTech Projects & Case Studies -->
+   <!-- Relevant MarTech Projects & Case Studies -->
     <section id="projects" class="py-20 md:py-28 bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
@@ -687,8 +657,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Project 1: CRM -->
                 <div class="bg-slate-900 border border-slate-800 hover:border-amber-500/50 rounded-2xl p-6 flex flex-col justify-between space-y-6">
                     <div class="space-y-4">
@@ -711,8 +680,7 @@
                         <i class="fa-solid fa-circle-info text-amber-400"></i> View Technical Details
                     </button>
                 </div>
-
-                <!-- Project 2: FirePlay Malware/Fraud Detection -->
+ <!-- Project 2: FirePlay Malware/Fraud Detection -->
                 <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-6 flex flex-col justify-between space-y-6">
                     <div class="space-y-4">
                         <div class="flex items-center justify-between">
@@ -733,8 +701,7 @@
                         <i class="fa-solid fa-circle-info text-emerald-400"></i> View Technical Details
                     </button>
                 </div>
-
-                <!-- Project 3: Traffic & Visibility Scaling -->
+  <!-- Project 3: Traffic & Visibility Scaling -->
                 <div class="bg-slate-900 border border-slate-800 hover:border-teal-500/50 rounded-2xl p-6 flex flex-col justify-between space-y-6">
                     <div class="space-y-4">
                         <div class="flex items-center justify-between">
@@ -756,11 +723,10 @@
                     </button>
                 </div>
 
-            </div>
+</div>
         </div>
     </section>
-
-    <!-- Core Competencies, Certifications & Education -->
+  <!-- Core Competencies, Certifications & Education -->
     <section id="skills" class="py-20 md:py-28 bg-slate-900 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -768,11 +734,9 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Competencies, Certifications & Education</h2>
                 <p class="text-slate-400 text-sm">Full breakdown as listed in Nusrin Dyni's official CV.</p>
             </div>
-
-            <!-- Skills Grid -->
+<!-- Skills Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                
-                <!-- Category 1 -->
+                 <!-- Category 1 -->
                 <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
                     <h3 class="text-sm font-bold text-amber-400 flex items-center gap-2">
                         <i class="fa-solid fa-bullseye"></i> Digital Marketing & Growth
@@ -785,8 +749,7 @@
                         <li>• AI-Powered Campaign Strategy</li>
                     </ul>
                 </div>
-
-                <!-- Category 2 -->
+   <!-- Category 2 -->
                 <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
                     <h3 class="text-sm font-bold text-emerald-400 flex items-center gap-2">
                         <i class="fa-solid fa-chart-line"></i> Analytics & Conversion
@@ -812,8 +775,7 @@
                         <li>• Page Speed & Core Web Vitals</li>
                     </ul>
                 </div>
-
-                <!-- Category 4 -->
+   <!-- Category 4 -->
                 <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-3">
                     <h3 class="text-sm font-bold text-blue-400 flex items-center gap-2">
                         <i class="fa-solid fa-list-check"></i> Project Management
@@ -826,18 +788,16 @@
                     </ul>
                 </div>
 
-            </div>
-
-            <!-- Certifications & Academic Degree Row -->
+ </div>
+<!-- Certifications & Academic Degree Row -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                
-                <!-- Certifications -->
+                  <!-- Certifications -->
                 <div class="lg:col-span-7 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
                     <h3 class="text-xl font-bold text-white flex items-center gap-2">
                         <i class="fa-solid fa-award text-amber-400"></i> Certifications
                     </h3>
                     
-                    <div class="space-y-3 text-xs">
+ <div class="space-y-3 text-xs">
                         <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
                             <div>
                                 <h4 class="font-bold text-white text-sm">Google Ads AI-Powered Performance Ads Certification</h4>
@@ -846,7 +806,7 @@
                             <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 font-semibold border border-amber-500/20 shrink-0">Jul 2025</span>
                         </div>
 
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+  <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
                             <div>
                                 <h4 class="font-bold text-white text-sm">Artificial Intelligence and Business Strategy</h4>
                                 <span class="text-slate-400">LinkedIn Learning / NASBA CPE</span>
@@ -854,7 +814,7 @@
                             <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20 shrink-0">Jul 2025</span>
                         </div>
 
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+<div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
                             <div>
                                 <h4 class="font-bold text-white text-sm">Agile Project Leadership & Management</h4>
                                 <span class="text-slate-400">LinkedIn Learning / PMI Registered Provider</span>
@@ -862,7 +822,7 @@
                             <span class="px-2.5 py-1 rounded bg-teal-500/10 text-teal-400 font-semibold border border-teal-500/20 shrink-0">Jul 2025</span>
                         </div>
 
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
+<div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-start justify-between">
                             <div>
                                 <h4 class="font-bold text-white text-sm">Digital Marketing Professional Training</h4>
                                 <span class="text-slate-400">Soften Technologies</span>
@@ -871,8 +831,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Education -->
+<!-- Education -->
                 <div class="lg:col-span-5 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6 flex flex-col justify-between">
                     <div class="space-y-4">
                         <h3 class="text-xl font-bold text-white flex items-center gap-2">
@@ -887,7 +846,7 @@
                         </div>
                     </div>
 
-                    <div class="pt-4">
+  <div class="pt-4">
                         <button onclick="downloadPDFCV()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-slate-950 font-bold text-xs shadow-lg transition-all flex items-center justify-center gap-2">
                             <i class="fa-solid fa-file-pdf text-sm"></i>
                             <span>Download Full Printable CV PDF</span>
@@ -895,15 +854,14 @@
                     </div>
                 </div>
 
-            </div>
+</div>
         </div>
     </section>
  <!-- Contact Section -->
     <section id="contact" class="py-20 md:py-28 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
-                <!-- Left Details -->
+                   <!-- Left Details -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
                         <span class="text-amber-400 text-sm font-bold uppercase tracking-wider">Direct Contact</span>
@@ -912,8 +870,7 @@
                             Available for full-time opportunities in Saudi Arabia (Transferable Iqama), remote roles, and consulting projects.
                         </p>
                     </div>
-
-                    <div class="space-y-4">
+    <div class="space-y-4">
                         <!-- Location -->
                         <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
                             <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
@@ -925,8 +882,7 @@
                                 <p class="text-xs text-emerald-400 font-medium mt-0.5">Transferable Iqama (Valid Resident Visa)</p>
                             </div>
                         </div>
-
-                        <!-- Email -->
+ <!-- Email -->
                         <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
                             <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
                                 <i class="fa-solid fa-envelope"></i>
@@ -938,8 +894,7 @@
                                 </a>
                             </div>
                         </div>
-
-                        <!-- Phone -->
+  <!-- Phone -->
                         <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
                             <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
                                 <i class="fa-solid fa-phone"></i>
@@ -951,8 +906,7 @@
                                 </a>
                             </div>
                         </div>
-
-                        <!-- LinkedIn -->
+  <!-- LinkedIn -->
                         <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
                             <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0">
                                 <i class="fa-brands fa-linkedin-in"></i>
@@ -966,13 +920,12 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Right Form -->
+ <!-- Right Form -->
                 <div class="lg:col-span-7 bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-800">
                     <h3 class="text-xl font-bold text-white mb-2">Send an Inquiry / Job Offer</h3>
                     <p class="text-xs text-slate-400 mb-6">Send your requirements or message directly.</p>
 
-                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+ <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label for="userName" class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name *</label>
@@ -986,7 +939,7 @@
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label for="userService" class="block text-xs font-semibold text-slate-300 mb-1.5">Focus Area</label>
                                 <select id="userService" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
@@ -1007,25 +960,25 @@
                             </div>
                         </div>
 
-                        <div>
+  <div>
                             <label for="userMessage" class="block text-xs font-semibold text-slate-300 mb-1.5">Message / Job Description *</label>
                             <textarea id="userMessage" rows="4" required placeholder="Describe your project scope or position details..." 
                                 class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500 transition-colors"></textarea>
                         </div>
 
-                        <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm shadow-md transition-all flex items-center justify-center space-x-2">
+<button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm shadow-md transition-all flex items-center justify-center space-x-2">
                             <span>Send Message</span>
                             <i class="fa-solid fa-paper-plane text-xs"></i>
                         </button>
                     </form>
 
-                    <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
+  <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
                         <i class="fa-solid fa-circle-check text-lg mb-1 block"></i>
                         Thank you for reaching out! Your message has been recorded. Nusrin will contact you shortly.
                     </div>
                 </div>
 
-            </div>
+   </div>
         </div>
     </section>
 <!-- Footer -->
@@ -1037,12 +990,11 @@
                 </div>
                 <span class="text-sm font-semibold text-slate-300">Nusrin Dyni • Digital Marketing Specialist</span>
             </div>
-
-            <p class="text-xs text-slate-500">
+  <p class="text-xs text-slate-500">
                 &copy; <span id="currentYear"></span> Nusrin Dyni. Jeddah, Saudi Arabia. All rights reserved.
             </p>
 
-            <div class="flex items-center space-x-4 text-xs text-slate-400">
+<div class="flex items-center space-x-4 text-xs text-slate-400">
                 <button onclick="downloadPDFCV()" class="text-emerald-400 hover:underline flex items-center gap-1">
                     <i class="fa-solid fa-file-arrow-down"></i> PDF CV
                 </button>
@@ -1050,8 +1002,7 @@
             </div>
         </div>
     </footer>
-
-    <!-- Dynamic Detail Modal -->
+ <!-- Dynamic Detail Modal -->
     <div id="modalOverlay" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
         <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 sm:p-8 space-y-6 relative shadow-2xl">
             <button onclick="closeModal('modalOverlay')" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
@@ -1067,8 +1018,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Full CV Interactive View Modal -->
+ <!-- Full CV Interactive View Modal -->
     <div id="cvViewModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
         <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col relative shadow-2xl overflow-hidden">
             <div class="p-4 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-950">
@@ -1086,7 +1036,7 @@
                 </div>
             </div>
 
-            <div class="p-6 overflow-y-auto space-y-6 text-xs text-slate-300">
+   <div class="p-6 overflow-y-auto space-y-6 text-xs text-slate-300">
                 <!-- CV Header -->
                 <div class="border-b border-slate-800 pb-4">
                     <h2 class="text-2xl font-bold text-white">NUSRIN DYNI</h2>
@@ -1094,16 +1044,14 @@
                     <p class="text-slate-400 mt-1">Jeddah, Saudi Arabia | Visa Status: Transferable Iqama (Valid Resident Visa)</p>
                     <p class="text-slate-400">Phone: +966 548706043 | Email: nusrindyni3@gmail.com | LinkedIn: linkedin.com/in/nusrin-dyni</p>
                 </div>
-
-                <!-- Professional Summary -->
+    <!-- Professional Summary -->
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Professional Summary</h4>
                     <p class="leading-relaxed text-slate-300">
                         Data-driven Digital Marketing Specialist with 3+ years of experience scaling organic search visibility, managing high-ROI paid media campaigns (Google Ads, Meta, YouTube), and executing technical SEO strategies. Combines a Computer Science & Full-Stack Web Development background (Python, Django, HTML/CSS/JS) with advanced web analytics (GA4, Google Tag Manager, Google Search Console) to implement accurate conversion tracking, optimize customer acquisition funnels, and deliver measurable revenue and traffic growth.
                     </p>
                 </div>
-
-                <!-- Skills -->
+   <!-- Skills -->
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Core Competencies & Technical Skills</h4>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1125,8 +1073,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Experience -->
+  <!-- Experience -->
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Professional Experience</h4>
                     <div class="space-y-4">
@@ -1140,7 +1087,7 @@
                             <p>• Accelerated lead capture and client follow-up efficiency by engineering a custom CRM web application (Django, jQuery, SQLite) to centralize customer consultation logs and lifecycle tracking.</p>
                         </div>
 
-                        <div>
+   <div>
                             <div class="flex justify-between font-bold text-slate-200">
                                 <span>Digital Marketing Executive | Varada Biz</span>
                                 <span class="text-amber-400">2022 – 2023</span>
@@ -1150,7 +1097,7 @@
                             <p>• Maximized campaign efficiency and reduced wasted ad spend by continuously monitoring user behavior, bounce rates, and conversion KPIs through Google Analytics and Google Search Console.</p>
                         </div>
 
-                        <div>
+ <div>
                             <div class="flex justify-between font-bold text-slate-200">
                                 <span>Python Django Developer (Intern) | Inmakes Info Technology</span>
                                 <span class="text-amber-400">2023</span>
@@ -1159,7 +1106,7 @@
                             <p>• Enhanced front-end usability and cross-device responsiveness by collaborating with UI/UX teams within an Agile Software Development Life Cycle (SDLC) environment.</p>
                         </div>
 
-                        <div>
+ <div>
                             <div class="flex justify-between font-bold text-slate-200">
                                 <span>Junior Digital Marketing Executive | Soften Technologies</span>
                                 <span class="text-amber-400">Aug 2020 – Jan 2021</span>
@@ -1169,7 +1116,7 @@
                             <p>• Improved marketing reporting granularity and audience targeting by deploying Google Tag Manager tracking containers and analyzing traffic trends via Google Analytics.</p>
                         </div>
 
-                        <div>
+ <div>
                             <div class="flex justify-between font-bold text-slate-200">
                                 <span>Web Developer (Intern) | Laxmi InfoTech</span>
                                 <span class="text-amber-400">2017</span>
@@ -1178,8 +1125,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Projects -->
+   <!-- Projects -->
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-slate-800 pb-1 mb-2">Relevant MarTech & Data Projects</h4>
                     <p>• <strong>Client Details Management System (Custom CRM):</strong> Engineered a full-stack CRM solution using Python (Django), jQuery, and SQLite to streamline lead tracking, consultation records, and client follow-up workflows.</p>
@@ -1198,8 +1144,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Hidden HTML Canvas Template for PDF Generation -->
+  <!-- Hidden HTML Canvas Template for PDF Generation -->
     <div id="pdfPrintContainer" class="fixed top-[-9999px] left-[-9999px] w-[800px] bg-white text-slate-900 p-8 font-sans leading-normal">
         <!-- Header -->
         <div style="border-bottom: 2px solid #0f172a; padding-bottom: 12px; margin-bottom: 14px;">
@@ -1212,16 +1157,14 @@
                 Phone: +966 548706043 &nbsp;|&nbsp; Email: nusrindyni3@gmail.com &nbsp;|&nbsp; LinkedIn: linkedin.com/in/nusrin-dyni
             </div>
         </div>
-
-        <!-- Summary -->
+ <!-- Summary -->
         <div style="margin-bottom: 14px;">
             <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Professional Summary</h3>
             <p style="font-size: 10.5px; color: #1e293b; text-align: justify; margin: 0;">
                 Data-driven Digital Marketing Specialist with 3+ years of experience scaling organic search visibility, managing high-ROI paid media campaigns (Google Ads, Meta, YouTube), and executing technical SEO strategies. Combines a Computer Science & Full-Stack Web Development background (Python, Django, HTML/CSS/JS) with advanced web analytics (GA4, Google Tag Manager, Google Search Console) to implement accurate conversion tracking, optimize customer acquisition funnels, and deliver measurable revenue and traffic growth.
             </p>
         </div>
-
-        <!-- Skills -->
+  <!-- Skills -->
         <div style="margin-bottom: 14px;">
             <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Core Competencies & Technical Skills</h3>
             <table style="width: 100%; font-size: 10px; border-collapse: collapse;">
@@ -1247,12 +1190,11 @@
                 </tr>
             </table>
         </div>
-
-        <!-- Experience -->
+    <!-- Experience -->
         <div style="margin-bottom: 14px;">
             <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Professional Experience</h3>
             
-            <div style="margin-bottom: 8px;">
+ <div style="margin-bottom: 8px;">
                 <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
                     <span>Digital Marketing Specialist (Consultant) | Freelance</span>
                     <span>2023 – Present</span>
@@ -1264,7 +1206,7 @@
                 </div>
             </div>
 
-            <div style="margin-bottom: 8px;">
+ <div style="margin-bottom: 8px;">
                 <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
                     <span>Digital Marketing Executive | Varada Biz</span>
                     <span>2022 – 2023</span>
@@ -1276,7 +1218,7 @@
                 </div>
             </div>
 
-            <div style="margin-bottom: 8px;">
+   <div style="margin-bottom: 8px;">
                 <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
                     <span>Python Django Developer (Intern) | Inmakes Info Technology</span>
                     <span>2023</span>
@@ -1287,7 +1229,7 @@
                 </div>
             </div>
 
-            <div style="margin-bottom: 8px;">
+  <div style="margin-bottom: 8px;">
                 <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
                     <span>Junior Digital Marketing Executive | Soften Technologies</span>
                     <span>Aug 2020 – Jan 2021</span>
@@ -1299,7 +1241,7 @@
                 </div>
             </div>
 
-            <div>
+ <div>
                 <div style="display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #0f172a;">
                     <span>Web Developer (Intern) | Laxmi InfoTech</span>
                     <span>2017</span>
@@ -1309,8 +1251,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Projects -->
+    <!-- Projects -->
         <div style="margin-bottom: 14px;">
             <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Relevant MarTech & Data Projects</h3>
             <div style="font-size: 10px; color: #334155;">
@@ -1318,8 +1259,7 @@
                 • <strong>Search Rank Fraud & Malware Detection (FirePlay):</strong> Built a Python data-mining model to detect search rank manipulation and algorithmic abuse on the Google Play Store, demonstrating deep expertise in search ranking signals and data analysis.
             </div>
         </div>
-
-        <!-- Certifications & Education -->
+ <!-- Certifications & Education -->
         <div>
             <h3 style="font-size: 12px; font-weight: 800; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 6px;">Certifications & Education</h3>
             <div style="font-size: 10px; color: #334155;">
@@ -1335,24 +1275,23 @@
     </div>
 <!-- JavaScript Engine -->
     <script>
-        // Set dynamic current year
+    // Set dynamic current year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Mobile Menu Drawer Logic
+// Mobile Menu Drawer Logic
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
 
-        mobileMenuBtn.addEventListener('click', () => {
+  mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        mobileMenu.querySelectorAll('a').forEach(link => {
+ mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        // Set service selection in form
+// Set service selection in form
         function setServiceInquiry(serviceName) {
             const selectElem = document.getElementById('userService');
             if(selectElem) {
@@ -1360,28 +1299,27 @@
             }
         }
 
-        // Contact Form Submission Handler
+ // Contact Form Submission Handler
         function handleFormSubmit(e) {
             e.preventDefault();
             const submitBtn = document.getElementById('submitBtn');
             const successBox = document.getElementById('formSuccess');
-
             submitBtn.disabled = true;
             submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin text-xs"></i> <span>Sending...</span>`;
 
-            setTimeout(() => {
+  setTimeout(() => {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = `<span>Send Message</span> <i class="fa-solid fa-paper-plane text-xs"></i>`;
                 successBox.classList.remove('hidden');
                 document.getElementById('contactForm').reset();
 
-                setTimeout(() => {
+ setTimeout(() => {
                     successBox.classList.add('hidden');
                 }, 6000);
             }, 1200);
         }
 
-        // Modal Helpers
+ // Modal Helpers
         function closeModal(modalId) {
             const modal = document.getElementById(modalId);
             if(modal) {
@@ -1390,7 +1328,7 @@
             }
         }
 
-        function openCVPreviewModal() {
+function openCVPreviewModal() {
             const modal = document.getElementById('cvViewModal');
             if(modal) {
                 modal.classList.remove('hidden');
@@ -1398,7 +1336,7 @@
             }
         }
 
-        // Project Modals
+// Project Modals
         const projectData = {
             crm: {
                 title: "Client Details Management System (Custom CRM)",
@@ -1435,25 +1373,25 @@
             }
         };
 
-        function openProjectModal(key) {
+ function openProjectModal(key) {
             const data = projectData[key];
             if (!data) return;
 
-            const content = document.getElementById('modalContent');
+ const content = document.getElementById('modalContent');
             content.innerHTML = `
                 <div class="space-y-4">
                     <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">${data.tag}</span>
                     <h3 class="text-2xl font-bold text-white">${data.title}</h3>
                     <p class="text-sm text-slate-300 leading-relaxed">${data.desc}</p>
                     
-                    <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
+<div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
                         <h4 class="text-xs font-bold text-amber-400 uppercase">Key Implementation Highlights:</h4>
                         <ul class="space-y-1.5 text-xs text-slate-300">
                             ${data.highlights.map(h => `<li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> <span>${h}</span></li>`).join('')}
                         </ul>
                     </div>
 
-                    <div>
+<div>
                         <span class="text-xs text-slate-400 font-semibold block mb-2">Technologies Used:</span>
                         <div class="flex flex-wrap gap-2">
                             ${data.stack.map(s => `<span class="px-2.5 py-1 rounded bg-slate-800 text-slate-200 text-xs font-medium">${s}</span>`).join('')}
@@ -1462,12 +1400,12 @@
                 </div>
             `;
 
-            const overlay = document.getElementById('modalOverlay');
+ const overlay = document.getElementById('modalOverlay');
             overlay.classList.remove('hidden');
             overlay.classList.add('flex');
         }
 
-        // Functional PDF Download Engine for DigitalMarketing_NusrinDyni_Cv.pdf
+ // Functional PDF Download Engine for DigitalMarketing_NusrinDyni_Cv.pdf
         async function downloadPDFCV() {
             const btnList = document.querySelectorAll('button[onclick*="downloadPDFCV"]');
             btnList.forEach(btn => {
@@ -1476,10 +1414,10 @@
                 btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> <span>Generating PDF...</span>`;
             });
 
-            try {
+ try {
                 const element = document.getElementById('pdfPrintContainer');
                 
-                // Use html2canvas to render the hidden structured CV template into high-res canvas
+ // Use html2canvas to render the hidden structured CV template into high-res canvas
                 const canvas = await html2canvas(element, {
                     scale: 2,
                     useCORS: true,
@@ -1487,43 +1425,43 @@
                     logging: false
                 });
 
-                const imgData = canvas.toDataURL('image/jpeg', 0.98);
+const imgData = canvas.toDataURL('image/jpeg', 0.98);
                 const { jsPDF } = window.jspdf;
                 
-                // Create clean portrait A4 PDF
+// Create clean portrait A4 PDF
                 const pdf = new jsPDF({
                     orientation: 'p',
                     unit: 'mm',
                     format: 'a4'
                 });
 
-                const imgWidth = 210; // A4 width in mm
+ const imgWidth = 210; // A4 width in mm
                 const pageHeight = 297; // A4 height in mm
                 const imgHeight = (canvas.height * imgWidth) / canvas.width;
                 
-                let heightLeft = imgHeight;
+let heightLeft = imgHeight;
                 let position = 0;
 
-                pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+ pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
                 heightLeft -= pageHeight;
 
-                while (heightLeft > 0) {
+  while (heightLeft > 0) {
                     position = heightLeft - imgHeight;
                     pdf.addPage();
                     pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
                     heightLeft -= pageHeight;
                 }
 
-                // Trigger direct file download
+ // Trigger direct file download
                 pdf.save('DigitalMarketing_NusrinDyni_Cv.pdf');
 
-            } catch (err) {
+   } catch (err) {
                 console.error("PDF generation fallback:", err);
                 // Reliable Fallback: Open print dialog for instant PDF print/save
                 const printWindow = window.open('', '_blank');
                 const cvHtml = document.getElementById('pdfPrintContainer').innerHTML;
                 printWindow.document.write(`
-                    <html>
+ <html>
                     <head>
                         <title>DigitalMarketing_NusrinDyni_Cv</title>
                         <style>
